@@ -1,0 +1,5 @@
+unshare -rn (no network namespace):
+[freeze] threshold=-0.114291 model=b07fa17b62433824 cal=2f7ec5c1ca6be91c (cal FAR 0.0268 FRR 0.0156; 128 genuine / 224 impostor)
+seed=2323  threshold=-0.114291 (frozen before holdout; freeze digest 8b559d3c10e457ef)
+POOLED FRR: 9/256 = 0.0352 (95% upper 0.0655)
+POOLED FAR: 31/1344 = 0.0231 (95% upper 0.0326)

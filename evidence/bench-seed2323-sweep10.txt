@@ -1,0 +1,49 @@
+[freeze] threshold=-0.114291 model=b07fa17b62433824 cal=2f7ec5c1ca6be91c (cal FAR 0.0268 FRR 0.0156; 128 genuine / 224 impostor)
+seed=2323  threshold=-0.114291 (frozen before holdout; freeze digest 8b559d3c10e457ef)
+regime class            metric   errors/n    rate   95%up min margin
+fast   genuine_normal   FRR          1/64  0.0156  0.0833     -0.001
+fast   fatigued_self    FRR          1/64  0.0156  0.0833     -0.083
+fast   random_stranger  FAR         4/160  0.0250  0.0625     -0.222
+fast   param_mimic      FAR          4/64  0.0625  0.1500     -0.341
+fast   swap_offdiag     FAR        11/448  0.0246  0.0434           
+slow   genuine_normal   FRR          1/64  0.0156  0.0833     -0.127
+slow   fatigued_self    FRR          6/64  0.0938  0.1898     -0.398
+slow   random_stranger  FAR         0/160  0.0000  0.0234     +0.062
+slow   param_mimic      FAR          4/64  0.0625  0.1500     -0.347
+slow   swap_offdiag     FAR         8/448  0.0179  0.0348           
+POOLED FRR: 9/256 = 0.0352 (95% upper 0.0655)
+POOLED FAR: 31/1344 = 0.0231 (95% upper 0.0326)
+swap matrix [fast] rows = enrolled model, cols = true source (accepted/attempts):
+         P00   P01   P02   P03   P04   P05   P06   P07
+  P00    7/8   0/8   0/8   0/8   0/8   0/8   0/8   0/8
+  P01    0/8   8/8   6/8   0/8   0/8   0/8   0/8   0/8
+  P02    0/8   4/8   8/8   0/8   0/8   0/8   0/8   0/8
+  P03    0/8   0/8   0/8   8/8   0/8   0/8   0/8   0/8
+  P04    0/8   0/8   0/8   0/8   8/8   0/8   0/8   0/8
+  P05    0/8   0/8   0/8   0/8   0/8   8/8   1/8   0/8
+  P06    0/8   0/8   0/8   0/8   0/8   0/8   8/8   0/8
+  P07    0/8   0/8   0/8   0/8   0/8   0/8   0/8   8/8
+swap matrix [slow] rows = enrolled model, cols = true source (accepted/attempts):
+         P00   P01   P02   P03   P04   P05   P06   P07
+  P00    8/8   0/8   0/8   0/8   0/8   0/8   0/8   0/8
+  P01    0/8   7/8   4/8   0/8   0/8   0/8   0/8   0/8
+  P02    0/8   3/8   8/8   0/8   0/8   0/8   0/8   0/8
+  P03    0/8   0/8   0/8   8/8   0/8   0/8   0/8   0/8
+  P04    0/8   0/8   0/8   0/8   8/8   0/8   0/8   0/8
+  P05    0/8   0/8   0/8   0/8   0/8   8/8   1/8   0/8
+  P06    0/8   0/8   0/8   0/8   0/8   0/8   8/8   0/8
+  P07    0/8   0/8   0/8   0/8   0/8   0/8   0/8   8/8
+mimic strength sweep (alpha=0: visible stats copied; 1: full clone): a=0.0: 8/128, a=0.25: 31/128, a=0.5: 68/128, a=0.75: 118/128, a=1.0: 128/128
+sequential (same frozen threshold, after k of 4 segments): k=1 FRR 0.156 FAR 0.060, k=2 FRR 0.102 FAR 0.042, k=3 FRR 0.051 FAR 0.029, k=4 FRR 0.035 FAR 0.027
+elapsed 13.18 s
+sweep seed=3323 threshold=-0.211041 FAR 18/1344 FRR 13/256
+sweep seed=4323 threshold=-0.289428 FAR 19/1344 FRR 4/256
+sweep seed=5323 threshold=-0.374499 FAR 34/1344 FRR 18/256
+sweep seed=6323 threshold=0.043017 FAR 10/1344 FRR 17/256
+sweep seed=7323 threshold=-0.136732 FAR 20/1344 FRR 9/256
+sweep seed=8323 threshold=-0.333875 FAR 70/1344 FRR 20/256
+sweep seed=9323 threshold=-0.13847 FAR 12/1344 FRR 5/256
+sweep seed=10323 threshold=-0.409767 FAR 55/1344 FRR 4/256
+sweep seed=11323 threshold=-0.19001 FAR 12/1344 FRR 18/256
+sweep seed=12323 threshold=-0.398752 FAR 48/1344 FRR 3/256
+SWEEP (10 seeds) FAR 298/13440 FRR 111/2560

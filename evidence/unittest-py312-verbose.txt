@@ -1,0 +1,50 @@
+Python 3.12.16
+test_bad_input_is_reported (tests.test_cli.TestCLI.test_bad_input_is_reported) ... ok
+test_enroll_and_score (tests.test_cli.TestCLI.test_enroll_and_score) ... ok
+test_no_network_modules (tests.test_cli.TestCLI.test_no_network_modules) ... ok
+test_synth_files_and_data_dir_bench (tests.test_cli.TestCLI.test_synth_files_and_data_dir_bench) ... ok
+test_batch_backspace_equals_run (tests.test_features.TestEdits.test_batch_backspace_equals_run) ... ok
+test_exact_counts (tests.test_features.TestEdits.test_exact_counts) ... ok
+test_channel_label_irrelevant (tests.test_features.TestInvariance.test_channel_label_irrelevant) ... ok
+test_rechunking_direct_to_batch (tests.test_features.TestInvariance.test_rechunking_direct_to_batch)
+The same burst stream delivered as 3-symbol BATCH_CHUNKs keeps the ... ok
+test_regimes_overlap_for_same_identity (tests.test_features.TestInvariance.test_regimes_overlap_for_same_identity)
+Same identity, fast vs slow regime: median distance (in population ... ok
+test_sensor_rate_downsampling (tests.test_features.TestInvariance.test_sensor_rate_downsampling)
+8 ms ticks vs every 7th tick (~56 ms): trajectory features move by ... ok
+test_time_scaling_exact (tests.test_features.TestInvariance.test_time_scaling_exact)
+Uniformly faster/slower hardware or operator: identical features. ... ok
+test_time_translation_exact (tests.test_features.TestInvariance.test_time_translation_exact) ... ok
+test_left_bow_is_positive (tests.test_features.TestReachGeometry.test_left_bow_is_positive) ... ok
+test_short_reach_ignored (tests.test_features.TestReachGeometry.test_short_reach_ignored) ... ok
+test_straight_constant_speed (tests.test_features.TestReachGeometry.test_straight_constant_speed) ... ok
+test_deterministic (tests.test_features.TestSynth.test_deterministic) ... ok
+test_disjoint_identity_pools (tests.test_features.TestSynth.test_disjoint_identity_pools) ... ok
+test_mimic_copies_visible_only (tests.test_features.TestSynth.test_mimic_copies_visible_only) ... ok
+test_schema_and_regimes (tests.test_features.TestSynth.test_schema_and_regimes) ... ok
+test_batch_insert_alias (tests.test_features.TestValidation.test_batch_insert_alias) ... ok
+test_ok (tests.test_features.TestValidation.test_ok) ... ok
+test_rejects (tests.test_features.TestValidation.test_rejects) ... ok
+test_overlap_minimises_sum (tests.test_pipeline.TestCalibrate.test_overlap_minimises_sum) ... ok
+test_separable (tests.test_pipeline.TestCalibrate.test_separable) ... ok
+test_wilson (tests.test_pipeline.TestCalibrate.test_wilson) ... ok
+test_drift_floor (tests.test_pipeline.TestModel.test_drift_floor) ... ok
+test_llr_clipped_and_missing_skipped (tests.test_pipeline.TestModel.test_llr_clipped_and_missing_skipped) ... ok
+test_sequential_running_mean (tests.test_pipeline.TestModel.test_sequential_running_mean) ... ok
+test_clone_is_accepted_more_than_mimic (tests.test_pipeline.TestProtocol.test_clone_is_accepted_more_than_mimic) ... ok
+test_counts (tests.test_pipeline.TestProtocol.test_counts) ... ok
+test_deterministic (tests.test_pipeline.TestProtocol.test_deterministic) ... ok
+test_evaluate_refuses_unfrozen_or_foreign_threshold (tests.test_pipeline.TestProtocol.test_evaluate_refuses_unfrozen_or_foreign_threshold) ... ok
+test_no_leakage_threshold_independent_of_holdout (tests.test_pipeline.TestProtocol.test_no_leakage_threshold_independent_of_holdout) ... ok
+test_quality_floor (tests.test_pipeline.TestProtocol.test_quality_floor)
+Loose sanity bounds (actual numbers are in the README/evidence). ... ok
+test_sequential_scores_shapes (tests.test_pipeline.TestProtocol.test_sequential_scores_shapes) ... ok
+test_swap_matrix_full_and_consistent (tests.test_pipeline.TestProtocol.test_swap_matrix_full_and_consistent) ... ok
+test_table_arithmetic_exact (tests.test_pipeline.TestProtocol.test_table_arithmetic_exact) ... ok
+test_table_covers_spec (tests.test_pipeline.TestProtocol.test_table_covers_spec) ... ok
+test_threshold_fixed_before_holdout_exists (tests.test_pipeline.TestProtocol.test_threshold_fixed_before_holdout_exists) ... ok
+
+----------------------------------------------------------------------
+Ran 39 tests in 83.317s
+
+OK
